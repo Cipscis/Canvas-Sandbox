@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Canvas Sandbox</title>
+	<link rel="stylesheet" href="content/css/default.css">
+	<script src="content/scripts/lib/require/require.js" type="text/javascript"></script>
+	<script src="content/scripts/lib/require/config.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="game">
+		<canvas class="background" width="900" height="600"></canvas>
+		<canvas class="foreground" width="900" height="600"></canvas>
+		<canvas class="overlay" width="900" height="600"></canvas>
+		<div class="events-layer"></div>
+	</div>
+
+	<script type="text/javascript">
+		// require(['battleship/battleship'], function (battleship) {
+		// 	battleship.init();
+		// });
+
+		require(['gravity/gravity'], function (gravity) {
+			gravity.init();
+		});
+
+		// require(['connect4/connect4'], function (connect4) {
+		// 	connect4.init();
+		// });
+	</script>
+</body>
+</html>

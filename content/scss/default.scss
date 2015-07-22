@@ -1,0 +1,15 @@
+@import 'reset';
+
+.game {
+	position: relative;
+	canvas {
+		position: absolute;
+	}
+	.events-layer {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@import 'debug';
